@@ -1,0 +1,132 @@
+/* General Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Questrial', sans-serif; 
+}
+
+body, html {
+    color: #333;
+    line-height: 1.6;
+    background-color: #e0f7fa; 
+}
+
+/* Container Styling */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* Jumbotron Styling */
+.jumbotron {
+    padding: 2rem 1rem;
+    background-color: #ffffff; 
+    margin-top: 60px; 
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.jumbotron:hover {
+    transform: translateY(-5px);
+}
+
+/* Navigation Bar Styling */
+header nav {
+    background-color: #b3e5fc; 
+    overflow: hidden;
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    display: inline-block;
+    padding: 14px 20px;
+    color: #0277bd; 
+    text-decoration: none;
+    transition: color 0.3s ease; 
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: #004c8c; 
+}
+
+/* Typography */
+h1, h2, h3 {
+    color: #007bff;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.text-highlight-primary {
+    color: #0097a7;
+    font-weight: bold;
+}
+
+.text-highlight-secondary {
+    color: #00acc1;
+    font-weight: bold;
+}
+
+/* Skills Section */
+#skills .skill-category {
+    margin-bottom: 1rem;
+}
+
+#skills .tags li {
+    display: inline-block;
+    background: #b3e5fc;
+    color: #0277bd;
+    padding: 5px 10px;
+    margin: 2px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#skills .tags li:hover {
+    background-color: #81d4fa;
+}
+
+/* Spice Section Styling */
+.spice, .spice-primary, .spice-secondary {
+    background-color: #b3e5fc;
+    color: #01579b;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header nav ul li a {
+        padding: 14px 10px; /* Adjust padding for smaller screens */
+    }
+}
+
+/* Import Fonts and Bootstrap CSS */
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+@import url('/css/bootstrap.min.css');
